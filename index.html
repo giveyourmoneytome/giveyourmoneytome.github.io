@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Give Your Money to Me</title>
+    <style>
+        body {
+            background-color: #fef6e4;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            text-align: center;
+        }
+
+        h1 {
+            color: #ff5c5c;
+            font-size: 3rem;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px #ffe162;
+        }
+
+        form {
+            background: #ffffff;
+            padding: 20px 40px;
+            border: 4px dashed #ff9a76;
+            border-radius: 20px;
+            box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+
+        input[type="number"] {
+            padding: 10px;
+            font-size: 1rem;
+            border: 2px solid #ff9a76;
+            border-radius: 8px;
+            width: 200px;
+            margin-bottom: 20px;
+        }
+
+        button {
+            display: block;
+            background-color: #ff5c5c;
+            color: white;
+            font-size: 1.2rem;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            margin: 0 auto;
+        }
+
+        button:hover {
+            background-color: #ff2e63;
+        }
+
+        /* Playful effect without JavaScript: checkbox trick */
+        input[type="submit"]:hover {
+            animation: shake 0.5s;
+        }
+
+        @keyframes shake {
+            0% { transform: translateX(0); }
+            25% { transform: translateX(-5px); }
+            50% { transform: translateX(5px); }
+            75% { transform: translateX(-5px); }
+            100% { transform: translateX(0); }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Give Your Money to Me 🤑</h1>
+
+    <form action="#">
+        <label for="amount">Enter how much you love me ($):</label>
+        <input type="number" id="amount" name="amount" min="1" required>
+        <button type="submit">Take My Money!</button>
+    </form>
+
+</body>
+</html>

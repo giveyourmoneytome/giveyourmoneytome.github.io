@@ -1,1 +1,0 @@
-# giveyourmoneytome.github.io
